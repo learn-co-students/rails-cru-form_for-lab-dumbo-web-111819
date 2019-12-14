@@ -1,0 +1,7 @@
+<h1>My Genre</h1>
+<a href= '/genres/new'>Create a Genre?</a>
+
+<% @genres.each do |genre|%>
+    <%=link_to genre.name, genre%>
+    <hr>
+<%end%>
