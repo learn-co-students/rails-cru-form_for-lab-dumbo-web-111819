@@ -1,0 +1,11 @@
+<h1>These are the songs</h1>
+
+<a href = "/songs/new"> Create a Song</a>
+<br>
+<br>
+
+<% @songs.each do |song|%>
+    <%=link_to song.name, song%> <br>
+    <p>Artist Name:<%=song.artist.name%></p> <br>
+    <p>Genre Name:<%=song.genre.name%></p> <br>
+<%end%>

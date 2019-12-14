@@ -1,0 +1,7 @@
+<h1>These are the Artists</h1>
+<a href= '/artists/new'> Create an Artist </a> <br> <br>
+
+    <%@artists.each do |artist|%>
+    <%= link_to artist.name, artist%>
+    <hr>
+<%end%>
